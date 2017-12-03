@@ -1,0 +1,166 @@
+*,:after,:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    background-color: #f9fbfd;
+}
+
+body,input,select,textarea {
+    font: 400 14px Lato,Arial,sans-serif;
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+}
+
+.master-section {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#menu {
+    position: absolute;
+    width: 365px;
+    background: #222629;
+    color: #a3b7c0;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    z-index: 5;
+    min-height: 100%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+    /*will-change: transform;*/
+}
+
+.task-section {
+    width: calc(100% - 365px);
+    margin-left: 365px;
+    right: 0;
+    z-index: 5;
+    filter: none;
+}
+
+.task-section-header {
+    background: #edf1f2;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+.task-section-header-title {
+    display: flex;
+    align-items: center;
+    color: #3d464d;
+    font-size: 1.35em;
+    letter-spacing: -.5px;
+    margin-bottom: 0px;
+    width: 100%;    
+}
+
+.task-section-header-title small {
+    font-weight: 600;
+    font-size: 14.4px;
+    margin-right: 13.5px;
+    vertical-align: middle;
+}
+
+.task-section-header-title-text {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    font-weight: bolder;
+    line-height: 1.118;
+    letter-spacing: -.5px;
+    color: #3d464d;
+    vertical-align: middle;
+    font-size: 18.9px;
+}
+
+.task-section-header-title-svg {
+    margin-right: 13.5px;
+    width: 28.8px;
+    min-width: 28.8px;
+    height: 28.8px;
+    min-height: 28.8px;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #3d464d;
+}
+
+.task-section-header-actions {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.task-section-header-actions .task-actions-button {
+    display: inline-block;
+    width: auto;
+}
+
+.task-actions-button {
+    padding: 10px 20px;
+    font-size: 11.5px;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    border-width: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.task-actions-button::before {
+    content: 'Teste';        
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.task-actions-button-next  {
+    width: 120px;
+    background: #32a7e5;
+}
+.task-actions-button-next::before {
+    content: '';
+    background-image: url(../images/svg/icon-proxima-atividade.svg);
+}
+
+.task-submit {}
